@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+   <cn.bingoogolapple.qrcode.zxing.ZXingView
+       android:visibility="gone"
+        android:id="@+id/zxingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/white"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_customScanLineDrawable="@drawable/ic_scan_line"
+        app:qrcv_isOnlyDecodeScanBoxArea="true"
+        app:qrcv_isScanLineReverse="true"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_topOffset="150dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_30_black">
+
+        <include
+            android:id="@+id/titleLayout"
+            layout="@layout/trans_title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:id="@+id/linearLayout">
+
+            <ImageView
+                android:id="@+id/flasherSwithImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scan_flash_selector" />
+
+            <ImageView
+                android:id="@+id/muteSwithImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/scan_mute_selector" />
+
+            <ImageView
+                android:id="@+id/shockSwithImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/scan_shock_selector" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp">
+
+            <View
+                android:id="@+id/centerDivideView"
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/manualInputText"
+                style="@style/text_size_15_white_style"
+                android:layout_width="120dp"
+                android:layout_toLeftOf="@+id/centerDivideView"
+                android:background="@drawable/bg_scan_black_text"
+                android:drawableLeft="@drawable/ic_scan_input_edit"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/manual_input" />
+
+            <TextView
+                android:id="@+id/completeText"
+                style="@style/text_size_15_white_style"
+                android:layout_width="120dp"
+                android:layout_toRightOf="@+id/centerDivideView"
+                android:background="@drawable/bg_scan_red_text"
+                android:gravity="center"
+                android:text="@string/complete" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/scannerNumText"
+            style="@style/text_size_18_white_style"
+            android:layout_above="@+id/bottomLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_number"
+            android:gravity="center"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/scannerContentText"
+            style="@style/text_size_16_white_style"
+            android:text="@string/please_scan"
+            android:layout_above="@+id/scannerNumText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="109dp" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="60dp"
+            android:id="@+id/relativeLayout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/scannerContentText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TextView"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <EditText
+            android:cursorVisible="false"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_marginBottom="27dp"
+            android:layout_above="@+id/scannerContentText"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</merge>

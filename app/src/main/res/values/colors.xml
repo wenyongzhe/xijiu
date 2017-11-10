@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b2b2b2</color>
+    <color name="colorPrimaryDark">#b2b2b2</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 默认背景色 -->
+    <color name="default_bg">#e9e9e9</color>
+
+    <color name="gray">#808080</color>
+    <!-- 浅灰 -->
+    <color name="light_gray">#b2b2b2</color>
+    <!-- 中灰 -->
+    <color name="mid_gray">#979797</color>
+    <!-- 深灰 -->
+    <color name="dark_gray">#373737</color>
+    <!-- 深灰 -->
+    <color name="dark_trans_gray">#2d2d2d</color>
+    <!-- 深半透明 -->
+    <color name="dark_translucent">#e0000000</color>
+    <!-- 红色-->
+    <color name="red">#e40e1a</color>
+    <!-- 浅红色-->
+    <color name="light_red">#fc6553</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 90%透明度白色 -->
+    <color name="alpha_white">#19ffffff</color>
+    <!-- 30%透明度黑色 -->
+    <color name="alpha_30_black">#8E000000</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 黑色背景 -->
+    <color name="bg_black">#161616</color>
+    <!-- 橘色-->
+    <color name="orange">#fab500</color>
+    <!-- 浅蓝-->
+    <color name="light_blue">#2cbdff</color>
+    <!-- 深蓝-->
+    <color name="drak_blue">#2abcff</color>
+    <!-- 浅绿-->
+    <color name="light_green">#9ed368</color>
+    <!-- 分割线颜色-->
+    <color name="divide_line">#d6d6d6</color>
+
+    <!-- zxing -->
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="dialogcolor">#000000</color>
+
+    <color name="bulue1">#157be0</color>
+</resources>

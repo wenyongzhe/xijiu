@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tagText"
+        style="@style/text_size_12_white_style"
+        android:background="@drawable/bg_red_round"
+        android:padding="2dp"
+        android:text="@string/freegift" />
+
+    <TextView
+        android:id="@+id/goodsNameText"
+        style="@style/text_size_15_black_style"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tagText"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/countText"
+        style="@style/text_size_14_light_gray_style" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_red_arrow_right" />
+
+</LinearLayout>

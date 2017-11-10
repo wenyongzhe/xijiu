@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/mainRtLatout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bg">
+
+        <FrameLayout
+            android:id="@+id/titleFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/titleLayout"
+                layout="@layout/title" />
+
+            <RelativeLayout
+                android:id="@+id/searchRtLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <EditText
+                        android:id="@+id/searchEdit"
+                        style="@style/text_size_15_black_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bg_search_edit" />
+
+                    <ImageView
+                        android:id="@+id/cancelSearchImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/ic_search_cancel" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/cancelSearchText"
+                    style="@style/text_size_15_light_gray_style"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/cancel" />
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divideLine"
+            style="@style/horizontal_gray_divider_line_style"
+            android:layout_below="@id/titleFrameLayout" />
+
+        <LinearLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divideLine"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/notCompleteText"
+                style="@style/montn_plan_tab_text_style"
+                android:text="@string/not_complete" />
+
+            <View
+                style="@style/vertical_gray_divider_line_style"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/hasCompletedText"
+                style="@style/montn_plan_tab_text_style"
+                android:text="@string/has_completed" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/tabCursorView"
+            style="@style/tab_cursor_style"
+            android:layout_below="@id/tabLayout" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tabCursorView"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/leftFragment"
+        android:name="com.hhxh.xijiu.main.view.MainLeftFragment"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:tag="LEFT" />
+</android.support.v4.widget.DrawerLayout>

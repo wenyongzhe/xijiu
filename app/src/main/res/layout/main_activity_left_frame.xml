@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/telephoneText"
+        style="@style/text_size_15_black_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/default_bg" />
+
+    <TextView
+        android:id="@+id/deliveryOrderText"
+        style="@style/main_left_fragment_text_style"
+        android:drawableLeft="@drawable/ic_delivery_order"
+        android:text="@string/delivery_orders" />
+
+    <TextView
+        android:id="@+id/salesmanOrderText"
+        style="@style/main_left_fragment_text_style"
+        android:drawableLeft="@drawable/ic_salesman_order"
+        android:text="@string/salesman_orders" />
+
+    <TextView
+        android:id="@+id/modifyPswText"
+        style="@style/main_left_fragment_text_style"
+        android:drawableLeft="@drawable/ic_modify_psw"
+        android:text="@string/modify_psw" />
+
+    <LinearLayout
+        android:id="@+id/versionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_size_14_black_style"
+            android:drawableLeft="@drawable/ic_version"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/cur_version" />
+
+        <TextView
+            android:id="@+id/versionText"
+            style="@style/text_size_14_light_gray_style"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_right_gray_arrow" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/exitText"
+        style="@style/main_left_fragment_text_style"
+        android:drawableLeft="@drawable/ic_exit"
+        android:text="@string/exit" />
+</LinearLayout>

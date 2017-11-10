@@ -1,0 +1,306 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <!--<style name="AppTheme" parent="android:Theme.Light">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--</style>-->
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/BaseAppTheme" />
+    <!-- 12sp字体text style -->
+    <style name="text_size_12_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font12</item>
+    </style>
+    <!-- 12sp白色字体text style -->
+    <style name="text_size_12_white_style" parent="text_size_12_style">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 14sp字体text style -->
+    <style name="text_size_14_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font14</item>
+    </style>
+    <!--&lt;!&ndash; 14sp灰色字体text style &ndash;&gt;-->
+    <!--<style name="text_size_14_gray_style" parent="text_size_14_style">-->
+        <!--<item name="android:textColor">@color/gray_888888</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash; 14sp浅灰色字体text style &ndash;&gt;-->
+    <!--<style name="text_size_14_gray_light_style" parent="text_size_14_style">-->
+        <!--<item name="android:textColor">@color/gray_light</item>-->
+    <!--</style>-->
+    <!-- 14sp灰色字体text style -->
+    <style name="text_size_14_white_style" parent="text_size_14_style">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 14sp浅灰色字体text style -->
+    <style name="text_size_14_light_gray_style" parent="text_size_14_style">
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+    <!-- 14sp橘色字体text style -->
+    <style name="text_size_14_orange_style" parent="text_size_14_style">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+    <!-- 14sp黑色字体text style -->
+    <style name="text_size_14_black_style" parent="text_size_14_style">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!-- 14sp淡蓝色字体text style -->
+    <style name="text_size_14_light_blue_style" parent="text_size_14_style">
+        <item name="android:textColor">@color/light_blue</item>
+    </style>
+    <!-- 14sp红色字体text style -->
+    <style name="text_size_14_red_style" parent="text_size_14_style">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <!--&lt;!&ndash; 14sp粉色字体 &ndash;&gt;-->
+    <!--<style name="text_size_14_pink_style" parent="text_size_14_style">-->
+        <!--<item name="android:textColor">@color/pink</item>-->
+    <!--</style>-->
+    <!-- 15sp字体text style -->
+    <style name="text_size_15_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font15</item>
+    </style>
+    <!-- 15sp白色字体text style -->
+    <style name="text_size_15_white_style" parent="text_size_15_style">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 15sp浅蓝色字体text style -->
+    <style name="text_size_15__light_blue_style" parent="text_size_15_style">
+        <item name="android:textColor">@color/light_blue</item>
+    </style>
+    <!-- 15sp 黑色字体text style -->
+    <style name="text_size_15_black_style" parent="text_size_15_style">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!-- 15sp 灰色字体text style -->
+    <style name="text_size_15_gray_style" parent="text_size_15_style">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <!-- 15sp 浅灰色字体text style -->
+    <style name="text_size_15_light_gray_style" parent="text_size_15_style">
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+    <!-- 15sp 红色字体text style -->
+    <style name="text_size_15_red_style" parent="text_size_15_style">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <!-- 16sp字体text style -->
+    <style name="text_size_16_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font16</item>
+    </style>
+    <!-- 16sp灰色字体text style -->
+    <style name="text_size_16_gray_style" parent="text_size_16_style">
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+    <!-- 16sp黑色字体text style -->
+    <style name="text_size_16_black_style" parent="text_size_16_style">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!--&lt;!&ndash; 16sp蓝色色字体text style &ndash;&gt;-->
+    <!--<style name="text_size_16_blue_style" parent="text_size_16_style">-->
+        <!--<item name="android:textColor">@color/blue_009be0</item>-->
+    <!--</style>-->
+    <!-- 16sp白色字体text style -->
+    <style name="text_size_16_white_style" parent="text_size_16_style">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 16sp红色字体text style -->
+    <style name="text_size_16_red_style" parent="text_size_16_style">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <!-- 17sp字体text style -->
+    <style name="text_size_17_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font17</item>
+    </style>
+    <!-- 17sp白色色字体text style -->
+    <style name="text_size_17_white_style" parent="text_size_17_style">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--&lt;!&ndash; 17sp 灰色字体 text style &ndash;&gt;-->
+    <!--<style name="text_size_17_gray_style" parent="text_size_17_style">-->
+        <!--<item name="android:textColor">@color/gray_888888</item>-->
+    <!--</style>-->
+    <!-- 17sp 蓝色字体 text style -->
+    <style name="text_size_17_blue_style" parent="text_size_17_style">
+        <item name="android:textColor">@color/light_blue</item>
+    </style>
+    <!--&lt;!&ndash; 17sp 红色字体 text style &ndash;&gt;-->
+    <!--<style name="text_size_17_red_style" parent="text_size_17_style">-->
+        <!--<item name="android:textColor">@color/red_light</item>-->
+    <!--</style>-->
+    <!-- 18sp字体text style -->
+    <style name="text_size_18_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font18</item>
+    </style>
+    <!-- 18sp白色字体text style -->
+    <style name="text_size_18_white_style" parent="text_size_18_style">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 18sp黑色字体text style -->
+    <style name="text_size_18_black_style" parent="text_size_18_style">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <!-- 自定义ProgressDialog -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <!-- 自定义ProgressDialog -->
+    <style name="progressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 无数据显示style-->
+    <style name="no_data_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mid_gray</item>
+        <item name="android:textSize">@dimen/font20</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:drawableTop">@drawable/bg_no_data</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/no_data</item>
+    </style>
+    <!-- 红色水平分割线 -->
+    <style name="horizontal_red_divider_line_style">
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/red</item>
+    </style>
+    <!-- 灰色水平分割线 -->
+    <style name="horizontal_gray_divider_line_style">
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/divide_line</item>
+    </style>
+    <!-- 灰色垂直分割线 -->
+    <style name="vertical_gray_divider_line_style">
+        <item name="android:layout_width" >0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/divide_line</item>
+    </style>
+    <!-- 登陆界面edit style -->
+    <style name="login_edit_style" parent="@style/text_size_15_white_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:background">@drawable/bg_login_edit</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+    </style>
+
+    <!-- 主界面页卡Text style -->
+    <style name="montn_plan_tab_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+        <item name="android:textSize">@dimen/font17</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 分页滑动条 style -->
+    <style name="tab_cursor_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/red</item>
+    </style>
+
+    <!-- 送货订单item key text style -->
+    <style name="delivery_order_item_key_text_style" parent="@style/text_size_15_light_gray_style">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <!-- 送货订单item value text style -->
+    <style name="delivery_order_item_value_text_style" parent="@style/text_size_15_black_style">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    <style name="modify_psw_edit_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font14</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textColorHint">@color/mid_gray</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!-- 收款 text style -->
+    <style name="receive_amount_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- 侧滑fragment text style -->
+    <style name="main_left_fragment_text_style" parent="@style/text_size_14_black_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:drawableRight">@drawable/ic_right_gray_arrow</item>
+    </style>
+    <!-- 审核订单头部rtLauout样式 -->
+    <style name="salesman_order_details_header_rtlayout_style" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <!-- 审核订单头部标题text样式 -->
+    <style name="salesman_order_details_header_title_text_style" parent="@style/text_size_16_black_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="cusdom_dialog_whitebg" parent="@style/cusdom_dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="cusdom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_login_logo" />
+
+    <EditText
+        android:id="@+id/userNameEdit"
+        style="@style/login_edit_style"
+        android:layout_below="@id/logoImg"
+        android:layout_marginTop="55dp"
+        android:drawableLeft="@drawable/ic_login_user"
+        android:hint="@string/input_user_name" />
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        style="@style/login_edit_style"
+        android:layout_below="@id/userNameEdit"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_login_psw"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/loginText"
+        style="@style/text_size_17_white_style"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/passwordEdit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_login_text_selector"
+        android:gravity="center"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/findBackPswText"
+        style="@style/text_size_14_white_style"
+        android:layout_alignRight="@+id/loginText"
+        android:layout_below="@+id/loginText"
+        android:layout_marginTop="10dp"
+        android:text="@string/findback_psw" />
+</RelativeLayout>

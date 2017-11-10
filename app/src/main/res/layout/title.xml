@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titleLayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        style="@style/text_size_18_black_style"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxWidth="180sp"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/titleLeftText"
+        style="@style/text_size_16_black_style"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ic_white_back"
+        android:ellipsize="end"
+        android:maxWidth="90dp"
+        android:minWidth="50dp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/titleLeftImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_back_red"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/titleRightImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/titleRightBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/titleAddImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:padding="5dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/titleRightText"
+        style="@style/text_size_16_black_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

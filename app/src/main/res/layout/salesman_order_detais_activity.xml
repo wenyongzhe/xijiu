@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <View style="@style/horizontal_gray_divider_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/default_bg">
+
+        <com.hhxh.xijiu.custum.RefreshListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-1px"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@drawable/bg_gray_horizonter_divider_line"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"></com.hhxh.xijiu.custum.RefreshListView>
+    </RelativeLayout>
+</LinearLayout>

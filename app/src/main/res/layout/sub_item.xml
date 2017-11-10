@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRtLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp">
+
+    <TextView
+        android:id="@+id/nameText"
+        style="@style/text_size_15_black_style"
+        android:gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        style="@style/text_size_14_light_gray_style"
+        android:layout_below="@id/nameText"
+        android:layout_marginTop="5dp"
+        android:text="@string/number" />
+
+    <TextView
+        android:id="@+id/numberText"
+        style="@style/text_size_14_light_gray_style"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/nameText"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        style="@style/text_size_14_light_gray_style"
+        android:id="@+id/hasScannedNumTitleText"
+        android:layout_below="@id/numberText"
+        android:layout_marginTop="5dp"
+        android:text="@string/has_scanned" />
+
+    <TextView
+        android:id="@+id/hasScannedNumText"
+        style="@style/text_size_14_light_blue_style"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/numberText"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp" />
+
+    <View
+        style="@style/horizontal_gray_divider_line_style"
+        android:layout_below="@+id/hasScannedNumText"
+        android:layout_marginTop="15dp" />
+</RelativeLayout>

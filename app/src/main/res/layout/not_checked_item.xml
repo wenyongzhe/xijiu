@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/orderNumTitleText"
+        style="@style/text_size_16_black_style"
+        android:text="@string/order_num" />
+
+    <TextView
+        android:id="@+id/orderNumText"
+        style="@style/text_size_16_black_style"
+        android:layout_toRightOf="@id/orderNumTitleText" />
+
+    <TextView
+        android:id="@+id/orderStateText"
+        style="@style/text_size_14_light_blue_style"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
+
+    <View
+        android:id="@+id/divideLine"
+        style="@style/horizontal_gray_divider_line_style"
+        android:layout_below="@+id/orderNumTitleText"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp" />
+
+
+    <TextView
+        android:id="@+id/customerNameTitleText"
+        style="@style/delivery_order_item_key_text_style"
+        android:layout_below="@+id/divideLine"
+        android:text="@string/customer_name" />
+
+    <TextView
+        android:id="@+id/customerNameText"
+        style="@style/delivery_order_item_value_text_style"
+        android:layout_below="@+id/divideLine"
+        android:layout_toRightOf="@+id/customerNameTitleText" />
+
+
+    <TextView
+        android:id="@+id/contactPersonTitleText"
+        style="@style/delivery_order_item_key_text_style"
+        android:layout_below="@+id/customerNameText"
+        android:text="@string/contact_person" />
+
+    <TextView
+        android:id="@+id/contactPersonText"
+        style="@style/delivery_order_item_value_text_style"
+        android:layout_below="@+id/customerNameText"
+        android:layout_toRightOf="@+id/contactPersonTitleText" />
+
+    <TextView
+        android:id="@+id/contactTelText"
+        style="@style/delivery_order_item_value_text_style"
+        android:layout_below="@+id/customerNameText"
+        android:layout_toRightOf="@+id/contactPersonText"
+        android:layout_marginLeft="0dp"/>
+
+    <TextView
+        android:id="@+id/timeTitleText"
+        style="@style/delivery_order_item_key_text_style"
+        android:layout_below="@+id/contactPersonTitleText"
+        android:text="@string/order_time" />
+
+    <TextView
+        android:id="@+id/timeText"
+        style="@style/delivery_order_item_value_text_style"
+        android:layout_below="@+id/contactPersonTitleText"
+        android:layout_toRightOf="@+id/timeTitleText" />
+
+    <View
+        android:id="@+id/secondDivideLine"
+        style="@style/horizontal_gray_divider_line_style"
+        android:layout_below="@id/timeTitleText"
+        android:layout_marginTop="15dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondDivideLine"
+        android:layout_marginTop="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/totalAmountTitleText"
+            style="@style/text_size_14_red_style"
+            android:layout_centerVertical="true"
+            android:text="@string/total_amout" />
+
+        <TextView
+            android:id="@+id/totalAmountText"
+            style="@style/text_size_16_red_style"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/totalAmountTitleText" />
+
+        <TextView
+            android:id="@+id/designateText"
+            style="@style/text_size_15__light_blue_style"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/checkText"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_light_blue_round_text"
+            android:text="@string/designate" />
+
+        <TextView
+            android:id="@+id/checkText"
+            style="@style/text_size_15_red_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_check_text_selector"
+            android:text="@string/check" />
+    </RelativeLayout>
+</RelativeLayout>

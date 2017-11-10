@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/gray_title" />
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/titleLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_login_logo" />
+
+    <EditText
+        android:id="@+id/telephoneEdit"
+        style="@style/login_edit_style"
+        android:layout_below="@id/logoImg"
+        android:layout_marginTop="55dp"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_telephone"
+        android:hint="@string/input_telephone" />
+
+    <EditText
+        android:id="@+id/newPswEdit"
+        style="@style/login_edit_style"
+        android:layout_below="@id/telephoneEdit"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_login_psw"
+        android:hint="@string/input_new_psw" />
+
+    <LinearLayout
+        android:id="@+id/authCodeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newPswEdit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/authCodeEdit"
+            style="@style/text_size_15_white_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_auth_code_edit"
+            android:drawableLeft="@drawable/ic_auth_code"
+            android:drawablePadding="5dp"
+            android:inputType="number"
+            android:hint="@string/input_auth_code"
+            android:textColorHint="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/getAuthCodeText"
+            style="@style/text_size_15_white_style"
+            android:layout_toRightOf="@id/authCodeEdit"
+            android:background="@drawable/bg_get_auth_code_selector"
+            android:text="@string/get_auth_code" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/completeText"
+        style="@style/text_size_17_white_style"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/authCodeLayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_login_text_selector"
+        android:gravity="center"
+        android:text="@string/complete" />
+</RelativeLayout>

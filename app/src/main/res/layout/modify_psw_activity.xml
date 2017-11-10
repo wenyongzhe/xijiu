@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.hhxh.xijiu.main.view.ModifyPswActivity">
+
+    <include layout="@layout/title"></include>
+
+    <View style="@style/horizontal_gray_divider_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_size_16_black_style"
+            android:layout_marginLeft="15dp"
+            android:text="@string/old_psw" />
+
+        <EditText
+            android:id="@+id/oldPswEdit"
+            style="@style/modify_psw_edit_style"
+            android:hint="@string/input_old_psw" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_gray_divider_line_style"
+        android:layout_marginLeft="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_size_16_black_style"
+            android:layout_marginLeft="15dp"
+            android:text="@string/new_psw" />
+
+        <EditText
+            android:id="@+id/newPswEdit"
+            style="@style/modify_psw_edit_style"
+            android:hint="@string/input_new_psw" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/comfirmText"
+        style="@style/text_size_17_white_style"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/passwordEdit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_login_text_selector"
+        android:gravity="center"
+        android:text="@string/confirm" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_red_arrow_right" />
+
+    <LinearLayout
+        android:id="@+id/aboveLayout"
+        android:layout_toLeftOf="@+id/img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/goodsNameText"
+            style="@style/text_size_15_black_style"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/amountText"
+            style="@style/text_size_15_red_style"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/unitTitleText"
+        style="@style/text_size_14_light_gray_style"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/aboveLayout"
+        android:text="@string/unit" />
+
+    <TextView
+        android:id="@+id/unitText"
+        style="@style/text_size_14_light_gray_style"
+        android:layout_alignTop="@+id/unitTitleText"
+        android:layout_toRightOf="@+id/unitTitleText" />
+
+    <TextView
+        android:id="@+id/countText"
+        style="@style/text_size_14_light_gray_style"
+        android:layout_alignTop="@+id/unitTitleText"
+        android:layout_alignRight="@+id/aboveLayout"/>
+
+</RelativeLayout>

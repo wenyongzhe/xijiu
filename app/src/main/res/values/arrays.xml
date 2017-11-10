@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="receive_amount_type">
+        <item>线下</item>
+        <item>线上</item>
+    </string-array>
+</resources>

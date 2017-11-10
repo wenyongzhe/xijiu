@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"></include>
+
+    <View style="@style/horizontal_gray_divider_line_style" />
+
+    <LinearLayout style="@style/receive_amount_layout_style">
+
+        <TextView
+            style="@style/text_size_14_light_gray_style"
+            android:text="@string/receive_type" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:entries="@array/receive_amount_type"
+            android:gravity="center"></Spinner>
+    </LinearLayout>
+
+    <View style="@style/horizontal_gray_divider_line_style" />
+
+    <LinearLayout style="@style/receive_amount_layout_style">
+
+        <TextView
+            style="@style/text_size_14_light_gray_style"
+            android:text="@string/received_amount" />
+
+        <EditText
+            android:id="@+id/receivedAmountEdit"
+            style="@style/modify_psw_edit_style"
+            android:inputType="numberDecimal"
+            android:hint="@string/input_received_amount" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_gray_divider_line_style" />
+
+    <LinearLayout
+        android:id="@+id/evidenceLayout"
+        style="@style/receive_amount_layout_style">
+
+        <TextView
+            style="@style/text_size_14_light_gray_style"
+            android:text="@string/evidence" />
+
+        <EditText
+            android:id="@+id/evidenceEdit"
+            style="@style/modify_psw_edit_style"
+            android:inputType="text"
+            android:hint="@string/input_evidence" />
+    </LinearLayout>
+
+    <View android:id="@+id/divideView"
+        style="@style/horizontal_gray_divider_line_style" />
+
+    <EditText
+        android:id="@+id/remarkEdit"
+        android:layout_width="match_parent"
+        style="@style/text_size_14_black_style"
+        android:padding="5dp"
+        android:minHeight="50dp"
+        android:gravity="left|top"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_edit_input"
+        android:hint="@string/input_remark"
+        android:inputType="text"
+        android:textColorHint="@color/mid_gray"/>
+    <TextView
+        android:id="@+id/receiveAmountText"
+        style="@style/text_size_17_white_style"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/passwordEdit"
+        android:layout_margin="30dp"
+        android:background="@drawable/bg_login_text_selector"
+        android:gravity="center"
+        android:text="@string/receive_amount" />
+</LinearLayout>

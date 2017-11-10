@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/orderNumTitleText"
+            style="@style/text_size_15_light_gray_style"
+            android:text="@string/order_number" />
+
+        <TextView
+            android:id="@+id/orderNumText"
+            style="@style/text_size_15_black_style"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/orderNumTitleText" />
+
+        <TextView
+            android:id="@+id/orderStateText"
+            style="@style/text_size_17_blue_style"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/placeTimeTitleText"
+            style="@style/text_size_15_light_gray_style"
+            android:layout_below="@+id/orderNumTitleText"
+            android:layout_marginTop="5dp"
+            android:text="@string/place_order_time" />
+
+        <TextView
+            android:id="@+id/placeTimeText"
+            style="@style/text_size_15_black_style"
+            android:layout_alignTop="@id/placeTimeTitleText"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/placeTimeTitleText" />
+
+        <TextView
+            android:id="@+id/checkPeopleTitleText"
+            style="@style/text_size_15_light_gray_style"
+            android:layout_below="@+id/placeTimeTitleText"
+            android:layout_marginTop="5dp"
+            android:text="@string/check_people" />
+
+        <TextView
+            android:id="@+id/checkPeopleText"
+            style="@style/text_size_15_black_style"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/checkPeopleTitleText"
+            android:layout_toRightOf="@id/checkPeopleTitleText" />
+
+        <TextView
+            android:id="@+id/checkTimeTitleText"
+            style="@style/text_size_15_light_gray_style"
+            android:layout_below="@+id/checkPeopleText"
+            android:layout_marginTop="5dp"
+            android:text="@string/check_time" />
+
+        <TextView
+            android:id="@+id/checkTimeText"
+            style="@style/text_size_15_black_style"
+            android:layout_alignTop="@id/checkTimeTitleText"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/checkTimeTitleText" />
+    </RelativeLayout>
+
+
+    <TextView
+        style="@style/salesman_order_details_header_title_text_style"
+        android:text="@string/seller_info" />
+
+    <View style="@style/horizontal_gray_divider_line_style" />
+
+    <RelativeLayout style="@style/salesman_order_details_header_rtlayout_style">
+
+        <TextView
+            android:id="@+id/sellerNameTitleText"
+            style="@style/text_size_15_light_gray_style"
+            android:text="@string/seller_name" />
+
+        <TextView
+            android:id="@+id/sellerNameText"
+            style="@style/text_size_15_black_style"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/sellerNameTitleText" />
+
+        <TextView
+            android:id="@+id/contactPersonTitleText"
+            style="@style/text_size_15_light_gray_style"
+            android:layout_below="@+id/sellerNameText"
+            android:layout_marginTop="5dp"
+            android:text="@string/contact_person" />
+
+        <TextView
+            android:id="@+id/contactPersonText"
+            style="@style/text_size_15_black_style"
+            android:layout_alignTop="@id/contactPersonTitleText"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/contactPersonTitleText" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/salesman_order_details_header_title_text_style"
+        android:text="@string/take_delivery_info" />
+
+    <View style="@style/horizontal_gray_divider_line_style" />
+
+    <RelativeLayout style="@style/salesman_order_details_header_rtlayout_style">
+
+        <TextView
+            android:id="@+id/takeDeliveryPeopleTitleText"
+            style="@style/text_size_15_light_gray_style"
+            android:text="@string/take_delivery_people" />
+
+        <TextView
+            android:id="@+id/takeDeliveryPeopleText"
+            style="@style/text_size_15_black_style"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/takeDeliveryPeopleTitleText" />
+
+        <TextView
+            android:id="@+id/takeDeliveryAddressTitleText"
+            style="@style/text_size_15_light_gray_style"
+            android:layout_below="@+id/takeDeliveryPeopleText"
+            android:layout_marginTop="5dp"
+            android:text="@string/take_delivery_address" />
+
+        <TextView
+            android:id="@+id/takeDeliveryAddressText"
+            style="@style/text_size_15_black_style"
+            android:layout_alignTop="@id/takeDeliveryAddressTitleText"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/takeDeliveryAddressTitleText" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/salesman_order_details_header_title_text_style"
+        android:text="@string/goods_info" />
+</LinearLayout>
